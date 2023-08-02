@@ -13,7 +13,7 @@
   <body class="page">
     <!-- header -->
     <header class="main-header">
-      <div class="page-container">
+      <div class="page-container header-container">
         <nav class="nav">
           <a class="logo nav-logo" href="#">
             <span class="visually-hidden">Логотип сайта Девайс</span>
@@ -22,7 +22,7 @@
           <form class="search" method="get" action="https://echo.htmlacademy.ru/">
             <label class="search__label" for="search">
               <span class="visually-hidden">Поиск по сайту</span>
-              <input class="search__input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+              <input class="search__input input" type="text" name="search" id="search" placeholder="Поиск по сайту">
             </label>
             <button class="search__button btn" type="button">Найти</button>
           </form>
@@ -40,11 +40,11 @@
               </a>
             </li>
           </ul>
-          <!-- Класс container-menu-opened показывает доп меню  -->
+          <!-- Класс catalog-menu-opened показывает доп меню  -->
           <ul class="menu list-reset">
             <li class="menu__item">
               <a href="#" class="menu__link link">Каталог товаров</a>
-              <ul class="catalog-menu list-reset">
+              <ul class="catalog-menu catalog-menu-opened  list-reset">
                 <li class="catalog-menu__item">
                   <a href="#" class="catalog-menu__link link">Виртуальная реальность</a>
                 </li>
@@ -79,7 +79,7 @@
       </div>
     </header>
     <!-- main -->
-    <main class="main">
+    <main class="main main-container">
       <h1 class="visually-hidden">Девайс - интернет-магазин гаджетов</h1>
       <!-- slider  -->
       <section class="slider">
@@ -192,17 +192,17 @@
           </ol>
           <ol class="slider-pagination list-reset">
             <li class="slider-pagination__item">
-              <button class="slider-pagination-button slider-pagination-button-current btn" type="button">
+              <button class="slider-pagination__button slider-pagination-button-current btn" type="button">
                 <span class="visually-hidden">Первый слайд</span>
               </button>
             </li>
             <li class="slider-pagination__item">
-              <button class="slider-pagination-button btn" type="button">
+              <button class="slider-pagination__button btn" type="button">
                 <span class="visually-hidden">Второй слайд</span>
               </button>
             </li>
             <li class="slider-pagination__item">
-              <button class="slider-pagination-button btn" type="button">
+              <button class="slider-pagination__button btn" type="button">
                 <span class="visually-hidden">Третий слайд</span>
               </button>
             </li>
@@ -213,7 +213,7 @@
       <section class="categories">
         <div class="page-container">
           <h2 class="visually-hidden">Категории каталога</h2>
-          <ul class="categories-list list-reset">
+          <ul class="categories__list list-reset">
             <li class="categories__item">
               <a class="categories__link link" href="#">Виртуальная
                 реальность</a>
@@ -240,7 +240,7 @@
 
       <!-- info -->
       <section class="info">
-        <div class="page-container">
+        <div class="page-container info-container">
           <h2 class="visually-hidden">Информация о доставке, гарантии и кредите</h2>
           <ul class="tabs__nav list-reset">
             <li class="tabs__nav-item">
@@ -256,7 +256,7 @@
           <ul class="tabs__content list-reset">
             <li class="tabs__panel tabs__panel-active">
               <h3 class="tabs__panel-title title">Доставка</h3>
-              <p class="tabs__panel-descr">
+              <p class="tabs__panel-descr descr">
                 Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.
@@ -264,7 +264,7 @@
             </li>
             <li class="tabs__panel">
               <h3 class="tabs__panel-title title">Гарантия</h3>
-              <p class="tabs__panel-descr">
+              <p class="tabs__panel-descr descr">
                 Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.
@@ -272,7 +272,7 @@
             </li>
             <li class="tabs__panel">
               <h3 class="tabs__panel-title title">Кредит</h3>
-              <p class="tabs__panel-descr">
+              <p class="tabs__panel-descr descr">
                 Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
                 кредита. Выгодные
                 для банка, разумеется.
@@ -281,6 +281,7 @@
           </ul>
         </div>
       </section>
+      <!-- delivery -->
       <section class="delivery">
         <div class="page-container">
           <button class="delivery-btn btn" type="button">Доставим редкий товар под заказ</button>
@@ -288,7 +289,7 @@
       </section>
       <!-- detail -->
       <section class="detail">
-        <div class="page-container">
+        <div class="page-container detail-container">
           <!--about-us -->
           <div class="about-us">
             <h2 class="about-us__title title">О нас</h2>
@@ -308,14 +309,14 @@
           </div>
           <!-- contacts -->
           <div class="contacts">
-            <h2 class="contacts__title title">О нас</h2>
+            <h2 class="contacts__title title">Контакты</h2>
             <p class="contacts__descr descr">Вы можете забрать товар сами, заехав в наш офис.
               Заодно сможете проверить работоспособность покупки.
             </p>
-            <h3 class="contacts__subtitle title">Интернет-магазин «Девайс»</h3>
+            <h3 class="contacts__subtitle">Интернет-магазин «Девайс»</h3>
             <address class="contacts__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <h3 class="contacts__subtitle title">Время работы</h3>
+            <a class="contacts__tel link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <h3 class="contacts__subtitle">Время работы</h3>
             <p class="contacts__time">
               пн—пт: с 10:00 до 22:00<br>
               сб—вс: с 10:00 до 19:00
@@ -326,8 +327,8 @@
       </section>
       <!-- subscribe -->
       <section class="subscribe">
-        <div class="page-container">
-          <h2 class="subscribe__title title">Подпишитесь
+        <div class="page-container subscribe-container">
+          <h2 class="subscribe__title title">Подпишитесь<br>
             на рассылку</h2>
           <p class="subscribe__descr">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
@@ -344,44 +345,50 @@
     </main>
     <!-- footer -->
     <footer class="footer">
-      <div class="page-container">
-        <a class="logo nav-logo" href="#">
-          <span class="visually-hidden">Логотип сайта Девайс</span>
-          <img src="images/logo-footer.svg" alt="Логотип сайта Девайс." width="145" height="36">
-        </a>
-        <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-        <ul class="footer-menu list-reset">
-          <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link link">Доставка</a>
-          </li>
-          <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link link">Гарантия</a>
-          </li>
-          <li class="footer-menu__item">
-            <a href="#" class="footer-menu__link link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="social-list list-reset">
-          <li class="social-item">
-            <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Сссылка на телеграм канал</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ссылка на ютуб канал</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Ссылка на твиттер</span>
-            </a>
-          </li>
-          <a class="phone-link link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      <div class="page-container footer-container">
+        <div class="footer-wrapper-left">
+          <a class="logo footer-logo" href="#">
+            <span class="visually-hidden">Логотип сайта Девайс</span>
+            <img src="images/logo-footer.svg" alt="Логотип сайта Девайс." width="145" height="36">
+          </a>
+          <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        </div>
+        <div class="footer-wrapper-center">
+          <ul class="footer-menu list-reset">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link link">Доставка</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link link">Гарантия</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="social-list list-reset">
+            <li class="social-item">
+              <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Сссылка на телеграм канал</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ссылка на ютуб канал</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Ссылка на твиттер</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrapper-right">
+          <a class="footer-phone link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a href="https://htmlacademy.ru/" class="logo-academy">
             <span class="visually-hidden">Ссылка на официальеый сайт HTML Academy</span>
           </a>
-        </ul>
+        </div>
       </div>
     </footer>
   </body>
