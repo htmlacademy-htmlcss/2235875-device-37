@@ -14,32 +14,32 @@
     <!-- header -->
     <header class="main-header">
       <div class="page-container header-container">
+        <a class="logo nav-logo" href="#">
+          <span class="visually-hidden">Логотип сайта Девайс.</span>
+          <img src="images/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36">
+        </a>
+        <form class="search" method="get" action="https://echo.htmlacademy.ru/">
+          <label class="search__label" for="search">
+            <span class="visually-hidden">Поиск по сайту.</span>
+            <input class="search__input input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+          </label>
+          <button class="search__button btn" type="button">Найти</button>
+        </form>
+        <ul class="nav-bar list-reset">
+          <li class="nav-bar__item">
+            <a class="nav-bar__link login link" href="#">Войти</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link compare link" href="#">Сравнить</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link count link" href="#">
+              <span class="cart-count">2</span>
+              Корзина
+            </a>
+          </li>
+        </ul>
         <nav class="nav">
-          <a class="logo nav-logo" href="#">
-            <span class="visually-hidden">Логотип сайта Девайс</span>
-            <img src="images/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36">
-          </a>
-          <form class="search" method="get" action="https://echo.htmlacademy.ru/">
-            <label class="search__label" for="search">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input class="search__input input" type="text" name="search" id="search" placeholder="Поиск по сайту">
-            </label>
-            <button class="search__button btn" type="button">Найти</button>
-          </form>
-          <ul class="nav-bar list-reset">
-            <li class="nav-bar__item">
-              <a class="nav-bar__link login link" href="#">Войти</a>
-            </li>
-            <li class="nav-bar__item">
-              <a class="nav-bar__link compare link" href="#">Сравнить</a>
-            </li>
-            <li class="nav-bar__item">
-              <a class="nav-bar__link count link" href="#">
-                <span class="cart-count">2</span>
-                Корзина
-              </a>
-            </li>
-          </ul>
           <!-- Класс catalog-menu-opened показывает доп меню  -->
           <ul class="menu list-reset">
             <li class="menu__item">
@@ -49,7 +49,7 @@
                   <a href="#" class="catalog-menu__link link">Виртуальная реальность</a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="#" class="catalog-menu__link link">Моноподы для cелфи</a>
+                  <a href="catalog.html" class="catalog-menu__link link">Моноподы для cелфи</a>
                 </li>
                 <li class="catalog-menu__item">
                   <a href="#" class="catalog-menu__link link">Экшн-камеры</a>
@@ -80,16 +80,16 @@
     </header>
     <!-- main -->
     <main class="main main-container">
-      <h1 class="visually-hidden">Девайс - интернет-магазин гаджетов</h1>
+      <h1 class="visually-hidden">Девайс - интернет-магазин гаджетов.</h1>
       <!-- slider  -->
       <section class="slider">
         <div class="page-container">
-          <h2 class="visually-hidden">Промо</h2>
+          <h2 class="visually-hidden">Промо.</h2>
           <ol class="slides list-reset">
             <li class="slide slide-active">
               <div class="slider-wrapper">
                 <img src="images/slider/quadrocopter.png" width="560" height="560"
-                  alt="Изображение лазерного квадрокоптера">
+                  alt="Изображение лазерного квадрокоптера.">
                 <div class="slider-controls">
                   <button class="slider-button slider-prev btn" type="button">
                     <span class="visually-hidden">Предыдущий слайд</span>
@@ -124,7 +124,7 @@
             <li class="slide">
               <div class="slider-wrapper">
                 <img src="images/slider/fitness-bracelet.png" width="560" height="560"
-                  alt="Изображение лазерного квадрокоптера">
+                  alt="Изображение лазерного квадрокоптера.">
                 <div class="slider-controls">
                   <button class="slider-button slider-prev btn" type="button">
                     <span class="visually-hidden">Предыдущий слайд</span>
@@ -151,7 +151,7 @@
             </li>
             <li class="slide">
               <div class="slider-wrapper">
-                <img src="images/slider/selfie.png" width="560" height="560" alt="Изображение лазерного квадрокоптера">
+                <img src="images/slider/selfie.png" width="560" height="560" alt="Изображение лазерного квадрокоптера.">
                 <div class="slider-controls">
                   <button class="slider-button slider-prev btn" type="button">
                     <span class="visually-hidden">Предыдущий слайд</span>
@@ -193,17 +193,17 @@
           <ol class="slider-pagination list-reset">
             <li class="slider-pagination__item">
               <button class="slider-pagination__button slider-pagination-button-current btn" type="button">
-                <span class="visually-hidden">Первый слайд</span>
+                <span class="visually-hidden">Первый слайд.</span>
               </button>
             </li>
             <li class="slider-pagination__item">
               <button class="slider-pagination__button btn" type="button">
-                <span class="visually-hidden">Второй слайд</span>
+                <span class="visually-hidden">Второй слайд.</span>
               </button>
             </li>
             <li class="slider-pagination__item">
               <button class="slider-pagination__button btn" type="button">
-                <span class="visually-hidden">Третий слайд</span>
+                <span class="visually-hidden">Третий слайд.</span>
               </button>
             </li>
           </ol>
@@ -212,7 +212,7 @@
       <!-- categories -->
       <section class="categories">
         <div class="page-container">
-          <h2 class="visually-hidden">Категории каталога</h2>
+          <h2 class="visually-hidden">Категории каталога.</h2>
           <ul class="categories__list list-reset">
             <li class="categories__item">
               <a class="categories__link link" href="#">Виртуальная
@@ -241,7 +241,7 @@
       <!-- info -->
       <section class="info">
         <div class="page-container info-container">
-          <h2 class="visually-hidden">Информация о доставке, гарантии и кредите</h2>
+          <h2 class="visually-hidden">Информация о доставке, гарантии и кредите.</h2>
           <ul class="tabs__nav list-reset">
             <li class="tabs__nav-item">
               <button class="tabs__nav-btn tabs__nav-active btn" type="button">Доставка</button>
@@ -334,7 +334,7 @@
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
             <label for="email">
-              <span class="visually-hidden">Введите email</span>
+              <span class="visually-hidden">Введите email.</span>
               <input class="subscribe-form__input input" type="email" name="email" id="email" placeholder="Ваш e-mail">
             </label>
             <button class="subscribe-form__button btn" type="submit">Подписаться</button>
@@ -348,7 +348,7 @@
       <div class="page-container footer-container">
         <div class="footer-wrapper-left">
           <a class="logo footer-logo" href="#">
-            <span class="visually-hidden">Логотип сайта Девайс</span>
+            <span class="visually-hidden">Логотип сайта Девайс.</span>
             <img src="images/logo-footer.svg" alt="Логотип сайта Девайс." width="145" height="36">
           </a>
           <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
@@ -368,17 +368,17 @@
           <ul class="social-list list-reset">
             <li class="social-item">
               <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Сссылка на телеграм канал</span>
+                <span class="visually-hidden">Сссылка на телеграм канал.</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ссылка на ютуб канал</span>
+                <span class="visually-hidden">Ссылка на ютуб канал.</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Ссылка на твиттер</span>
+                <span class="visually-hidden">Ссылка на твиттер.</span>
               </a>
             </li>
           </ul>
@@ -386,7 +386,7 @@
         <div class="footer-wrapper-right">
           <a class="footer-phone link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a href="https://htmlacademy.ru/" class="logo-academy">
-            <span class="visually-hidden">Ссылка на официальеый сайт HTML Academy</span>
+            <span class="visually-hidden">Ссылка на официальеый сайт HTML Academy.</span>
           </a>
         </div>
       </div>

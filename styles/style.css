@@ -130,15 +130,17 @@ img {
 
 /* header */
 .header-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  align-items: center;
   padding: 20px 60px 0 60px;
   background: linear-gradient(#ffffff 20%, #ffe17f 20%, #ffe17f 80%);
 }
 
 .nav {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 30px;
-  align-items: center;
+  grid-column: 1/-1;
+  grid-row: 3;
 }
 
 .nav-logo {

@@ -12,47 +12,44 @@
 
   <body class="page">
     <!-- header -->
-    <header class="page-header">
+    <header class="main-header">
       <div class="page-container header-container header-container-inner">
+        <a class="logo nav-logo" href="#">
+          <span class="visually-hidden">Логотип сайта Девайс.</span>
+          <img src="images/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36">
+        </a>
+        <form class="search" method="get" action="https://echo.htmlacademy.ru/">
+          <label class="search__label" for="search">
+            <span class="visually-hidden">Поиск по сайту.</span>
+            <input class="search__input input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+          </label>
+          <button class="search__button btn" type="button">Найти</button>
+        </form>
+        <ul class="nav-bar list-reset">
+          <li class="nav-bar__item">
+            <a class="nav-bar__link login link" href="#">Войти</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link compare link" href="#">Сравнить</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link count link" href="#">
+              <span class="cart-count">2</span>
+              Корзина
+            </a>
+          </li>
+        </ul>
         <nav class="nav">
-          <a class="logo nav-logo" href="index.html">
-            <span class="visually-hidden">Логотип сайта Девайс</span>
-            <img src="images/logo-header.svg" alt="Логотип сайта Девайс." width="145" height="36">
-          </a>
-          <form class="search" method="get" action="https://echo.htmlacademy.ru/">
-            <label class="search__label" for="search">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input class="search__input input" type="text" name="search" id="search" placeholder="Поиск по сайту">
-            </label>
-            <button class="search__button btn" type="button">Найти</button>
-          </form>
-          <ul class="nav-bar list-reset">
-            <li class="nav-bar__item">
-              <a class="nav-bar__link login link" href="#">Коля Петухов</a>
-            </li>
-            <li class="nav-bar__item">
-              <a class="nav-bar__link exit link" href="#">Выйти</a>
-            </li>
-            <li class="nav-bar__item">
-              <a class="nav-bar__link compare link" href="#">Сравнить</a>
-            </li>
-            <li class="nav-bar__item">
-              <a class="nav-bar__link count link" href="#">
-                <span class="cart-count">2</span>
-                Корзина
-              </a>
-            </li>
-          </ul>
-          <!-- Класс container-menu-opened показывает доп меню  -->
+          <!-- Класс catalog-menu-opened показывает доп меню  -->
           <ul class="menu list-reset">
             <li class="menu__item">
               <a href="#" class="menu__link link">Каталог товаров</a>
-              <ul class="catalog-menu list-reset">
+              <ul class="catalog-menu catalog-menu-opened  list-reset">
                 <li class="catalog-menu__item">
                   <a href="#" class="catalog-menu__link link">Виртуальная реальность</a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a href="#" class="catalog-menu__link link">Моноподы для cелфи</a>
+                  <a href="catalog.html" class="catalog-menu__link link">Моноподы для cелфи</a>
                 </li>
                 <li class="catalog-menu__item">
                   <a href="#" class="catalog-menu__link link">Экшн-камеры</a>
@@ -107,8 +104,8 @@
       </header>
       <section class="catalog-products">
         <div class="page-container catalog-products-container">
-          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-          <form class="filter" method="post" action="https://echo.htmlacademy.ru/">
+          <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
             <h3 class="filter-title title">Фильтр</h3>
             <fieldset class="catalog-filter__group">
               <legend class="catalog-filter__title">Стоимость</legend>
@@ -205,10 +202,10 @@
               </select>
               <div class="arrow-buttons">
                 <button class="arrow-btn" type="button">
-                  <span class="visually-hidden">От большего к меньшему.</span>
+                  <span class="visually-hidden">по возрастанию.</span>
                 </button>
                 <button class="arrow-btn" type="button">
-                  <span class="visually-hidden">От меньшего к большему.</span>
+                  <span class="visually-hidden">по убыванию.</span>
                 </button>
               </div>
             </header>
@@ -216,7 +213,7 @@
               <ul class="catalog-product list-reset">
                 <li class="catalog-product__item icon-new">
                   <a class="catalog-product__link link" href="#">
-                    <img src="images/catalog-img/amateur.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                    <img src="images/catalog-img/amateur.jpg" alt="Любительская селфи-палка." width="360" height="380">
                     <div class="catalog-product__text">
                       <h3 class="catalog-product__title title">Любительская селфи-палка</h3>
                       <p class="catalog-product__price descr">500 ₽</p>
@@ -226,7 +223,7 @@
                 </li>
                 <li class="catalog-product__item icon-new">
                   <a class="catalog-product__link link" href="#">
-                    <img src="images/catalog-img/professional.jpg" alt="Профессиональная селфи-палка" width="360"
+                    <img src="images/catalog-img/professional.jpg" alt="Профессиональная селфи-палка." width="360"
                       height="380">
                     <div class="catalog-product__text">
                       <h3 class="catalog-product__title title">Профессиональная селфи-палка</h3>
@@ -237,7 +234,7 @@
                 </li>
                 <li class="catalog-product__item icon-new">
                   <a class="catalog-product__link link" href="#">
-                    <img src="images/catalog-img/unsinkable.jpg" alt="Непотопляемаяселфи-палка" width="360"
+                    <img src="images/catalog-img/unsinkable.jpg" alt="Непотопляемаяселфи-палка." width="360"
                       height="380">
                     <div class="catalog-product__text">
                       <h3 class="catalog-product__title title">Непотопляемаяселфи-палка</h3>
@@ -248,7 +245,7 @@
                 </li>
                 <li class="catalog-product__item icon-new">
                   <a class="catalog-product__link link" href="#">
-                    <img src="images/catalog-img/follow-me.jpg" alt="Селфи-палка «Следуй за мной»" width="360"
+                    <img src="images/catalog-img/follow-me.jpg" alt="Селфи-палка «Следуй за мной»." width="360"
                       height="380">
                     <div class="catalog-product__text">
                       <h3 class="catalog-product__title title">Селфи-палка «Следуй за мной»</h3>
@@ -290,7 +287,7 @@
       <div class="page-container footer-container">
         <div class="footer-wrapper-left">
           <a class="logo footer-logo" href="#">
-            <span class="visually-hidden">Логотип сайта Девайс</span>
+            <span class="visually-hidden">Логотип сайта Девайс.</span>
             <img src="images/logo-footer.svg" alt="Логотип сайта Девайс." width="145" height="36">
           </a>
           <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
@@ -310,17 +307,17 @@
           <ul class="social-list list-reset">
             <li class="social-item">
               <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Сссылка на телеграм канал</span>
+                <span class="visually-hidden">Сссылка на телеграм канал.</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ссылка на ютуб канал</span>
+                <span class="visually-hidden">Ссылка на ютуб канал.</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Ссылка на твиттер</span>
+                <span class="visually-hidden">Ссылка на твиттер.</span>
               </a>
             </li>
           </ul>
@@ -328,7 +325,7 @@
         <div class="footer-wrapper-right">
           <a class="footer-phone link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a href="https://htmlacademy.ru/" class="logo-academy">
-            <span class="visually-hidden">Ссылка на официальеый сайт HTML Academy</span>
+            <span class="visually-hidden">Ссылка на официальный сайт HTML Academy.</span>
           </a>
         </div>
       </div>
