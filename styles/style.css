@@ -128,6 +128,25 @@ img {
   border: none;
 }
 
+.button-yellow {
+  position: relative;
+  display: block;
+  text-align: center;
+  z-index: 1;
+}
+
+.button-yellow::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 8px;
+  background-color: #ffe17f;
+}
+
 /* header */
 .header-container {
   display: grid;
@@ -135,7 +154,7 @@ img {
   row-gap: 30px;
   align-items: center;
   padding: 20px 60px 0 60px;
-  background: linear-gradient(#ffffff 20%, #ffe17f 20%, #ffe17f 80%);
+  background: linear-gradient(#ffffff 21%, #ffe17f 21%, #ffe17f 79%);
 }
 
 .nav {
@@ -152,6 +171,34 @@ img {
 .search {
   grid-column: 1;
   grid-row: 2;
+  display: flex;
+}
+
+.search__input {
+  width: 359px;
+  max-width: 360px;
+  height: 40px;
+  padding: 10px 16px;
+  padding-left: 48px;
+  border-radius: 50px 0 0 50px;
+  border: 2px solid #000;
+  border-right: none;
+  background: transparent url("../images/icon/search.svg") left 16px center
+    no-repeat;
+}
+
+.search__button {
+  width: 160px;
+  padding: 7px 16px;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid #000;
 }
 
 .nav-bar {
@@ -166,17 +213,47 @@ img {
   padding-left: 25px;
 }
 
-.exit {
-  padding-left: 0;
-  opacity: 0.3;
-}
-
 .nav-bar__item:not(:last-child) {
-  margin-right: 22px;
+  margin-right: 35px;
 }
 
 .nav-bar__item:first-child {
   margin-right: auto;
+}
+
+.login {
+  background: url("../images/icon/login.svg") no-repeat left center;
+}
+
+.compare {
+  padding-left: 21px;
+  background: url("../images/icon/compare.svg") no-repeat left center;
+}
+
+.count {
+  position: relative;
+  padding-left: 28px;
+  background: url("../images/icon/cart.svg") no-repeat left top 2px;
+}
+
+.cart-count {
+  position: absolute;
+  left: -15px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  font-size: 14px;
+  line-height: normal;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.exit {
+  padding-left: 0;
+  opacity: 0.3;
 }
 
 .menu {
@@ -188,6 +265,7 @@ img {
 }
 
 .menu__link {
+  position: relative;
   display: block;
   padding-top: 14px;
   font-family: "Raleway";
@@ -207,8 +285,48 @@ img {
   margin-right: auto;
 }
 
+.menu__link-icon {
+  position: relative;
+  padding-right: 67px;
+}
+
+.menu__link-icon::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 51px;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background-image: url("../images/icon/plus-radius.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  transition: all 0.2s ease-in-out;
+}
+
 .menu__item:focus-within .catalog-menu-opened {
   display: flex;
+}
+
+.menu__item:focus-within .menu__link-icon::after {
+  background-image: url("../images/icon/minus-radius.svg");
+  opacity: 0.3;
+}
+
+.menu__item:focus-within .menu__link-icon:hover::after {
+  opacity: 1;
+}
+
+.menu__link-icon:hover::after {
+  opacity: 1;
+}
+
+.menu__item:focus-within .menu__link-icon:active::after {
+  opacity: 1;
+}
+
+.menu__link-icon:active::after {
+  opacity: 1;
 }
 
 .catalog-menu-opened {
@@ -233,7 +351,7 @@ img {
 /* slider */
 .slider {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 61px;
 }
 
 .slides {
@@ -241,11 +359,40 @@ img {
 }
 
 .slide {
+  position: relative;
   display: none;
 }
 
 .slide-active {
   display: flex;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 14%;
+  display: block;
+  width: 250px;
+  height: 135px;
+  font-family: "Rubik";
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.slide-one::before {
+  content: "01";
+}
+
+.slide-two::before {
+  content: "02";
+}
+
+.slide-three::before {
+  content: "03";
 }
 
 .slider-wrapper {
@@ -256,11 +403,23 @@ img {
 
 .slider-controls {
   position: absolute;
-  top: 50%;
+  top: 43%;
   display: flex;
+  padding-left: 30px;
   justify-content: space-between;
   width: 100%;
-  transform: translateY(-50%);
+  transform: translateY(-57%);
+}
+
+.slider-button {
+  padding: 0 10px;
+  width: 20px;
+  height: 60px;
+  background-image: url("../images/icon/left-tall-arrow.svg");
+}
+
+.slider-next {
+  transform: rotate(180deg);
 }
 
 .slider-wrapper-text {
@@ -268,10 +427,47 @@ img {
   padding-top: 120px;
 }
 
+.slider__title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 29px;
+}
+
+.slider__descr {
+  margin-bottom: 45px;
+}
+
+.slider__detail {
+  position: relative;
+  max-width: 220px;
+  min-height: 40px;
+  margin-bottom: 45px;
+}
+
+.product-feature {
+  display: flex;
+  gap: 20px;
+}
+
+.product-feature__descr {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+}
+
+.text-small {
+  font-size: 16px;
+  color: #444444;
+}
+
 .slider-pagination {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 9px;
   display: flex;
   gap: 20px;
   transform: translateX(-50%);
@@ -318,7 +514,37 @@ img {
   margin-bottom: 32px;
   width: 160px;
   height: 160px;
-  background-color: #ffe17f;
+}
+
+.virtual-icon::before {
+  background: #ffe17f url("../images/icon/categories-icon/virtual.svg")
+    no-repeat center center;
+}
+
+.monopods-icon::before {
+  background: #ffe17f url("../images/icon/categories-icon/monopods.svg")
+    no-repeat center center;
+}
+
+.action-cameras-icon::before {
+  background: #ffe17f url("../images/icon/categories-icon/action-cameras.svg")
+    no-repeat center center;
+}
+
+.fitness-bracelets-icon::before {
+  background: #ffe17f
+    url("../images/icon/categories-icon/fitness-bracelets.svg") no-repeat center
+    center;
+}
+
+.smart-watch-icon::before {
+  background: #ffe17f url("../images/icon/categories-icon/smart-watch.svg")
+    no-repeat center center;
+}
+
+.quadcopters::before {
+  background: #ffe17f url("../images/icon/categories-icon/quadcopters.svg")
+    no-repeat center center;
 }
 
 /* info */
@@ -333,7 +559,7 @@ img {
   display: flex;
 }
 
-.tabs__nav {
+.tabs-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,32 +569,32 @@ img {
   width: 287px;
 }
 
-.tabs__nav-item:not(:last-child) {
+.tabs-nav__item:not(:last-child) {
   margin-bottom: 35px;
 }
 
-.tabs__nav-btn {
+.tabs-nav__btn {
   padding: 10px;
   width: 160px;
   text-align: center;
 }
 
-.tabs__content {
+.tabs-content {
   width: 761px;
 }
 
-.tabs__panel {
+.tabs-panel {
   display: none;
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
 
-.tabs__panel-active {
+.tabs-panel__active {
   display: flex;
 }
 
-.tabs__panel-descr {
+.tabs-panel__descr {
   width: 479px;
 }
 

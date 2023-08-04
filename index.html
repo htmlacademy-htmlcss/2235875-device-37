@@ -23,7 +23,7 @@
             <span class="visually-hidden">Поиск по сайту.</span>
             <input class="search__input input" type="text" name="search" id="search" placeholder="Поиск по сайту">
           </label>
-          <button class="search__button btn" type="button">Найти</button>
+          <button class="search__button" type="button">Найти</button>
         </form>
         <ul class="nav-bar list-reset">
           <li class="nav-bar__item">
@@ -43,7 +43,7 @@
           <!-- Класс catalog-menu-opened показывает доп меню  -->
           <ul class="menu list-reset">
             <li class="menu__item">
-              <a href="#" class="menu__link link">Каталог товаров</a>
+              <a href="#" class="menu__link menu__link-icon link">Каталог товаров</a>
               <ul class="catalog-menu catalog-menu-opened  list-reset">
                 <li class="catalog-menu__item">
                   <a href="#" class="catalog-menu__link link">Виртуальная реальность</a>
@@ -86,7 +86,7 @@
         <div class="page-container">
           <h2 class="visually-hidden">Промо.</h2>
           <ol class="slides list-reset">
-            <li class="slide slide-active">
+            <li class="slide slide-active slide-one">
               <div class="slider-wrapper">
                 <img src="images/slider/quadrocopter.png" width="560" height="560"
                   alt="Изображение лазерного квадрокоптера.">
@@ -99,29 +99,29 @@
                   </button>
                 </div>
               </div>
-              <div class="slider-wrapper-text">
+              <div class="slider-wrapper-text ">
                 <h3 class="slider__title title">Порхает как бабочка,
                   жалит как пчела!</h3>
                 <p class="slider__descr descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
-                <a class="slider__detail btn" href="#">Подробнее</a>
+                <a class="slider__detail button-yellow  btn" href="#">Подробнее</a>
                 <ul class="product-feature list-reset">
                   <li class="product-feature__item">
                     <p class="product-feature__descr descr">
                       800 м
-                      <span class="text-small">Дальность полета</span>
                     </p>
+                    <span class="text-small">Дальность полета</span>
                   </li>
                   <li class="product-feature__item">
                     <p class="product-feature__descr descr">
                       50 м
-                      <span class="text-small">Радиус поражения</span>
                     </p>
+                    <span class="text-small">Радиус поражения</span>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="slide">
+            <li class="slide slide-two">
               <div class="slider-wrapper">
                 <img src="images/slider/fitness-bracelet.png" width="560" height="560"
                   alt="Изображение лазерного квадрокоптера.">
@@ -138,7 +138,7 @@
                 <h3 class="slider__title title">Худеем правильно!</h3>
                 <p class="slider__descr descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
                   занятия и соблюдать диету.</p>
-                <a class="slider__detail btn" href="#">Подробнее</a>
+                <a class="slider__detail button-yellow btn" href="#">Подробнее</a>
                 <ul class="product-feature list-reset">
                   <li class="product-feature__item">
                     <p class="product-feature__descr descr">
@@ -149,7 +149,7 @@
                 </ul>
               </div>
             </li>
-            <li class="slide">
+            <li class="slide slide-three">
               <div class="slider-wrapper">
                 <img src="images/slider/selfie.png" width="560" height="560" alt="Изображение лазерного квадрокоптера.">
                 <div class="slider-controls">
@@ -166,25 +166,25 @@
                 <p class="slider__descr descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                   Карл!) метров длиной и весом всего 5 кг.
                 </p>
-                <a class="slider__detail btn" href="#">Подробнее</a>
+                <a class="slider__detail button-yellow btn" href="#">Подробнее</a>
                 <ul class="product-feature list-reset">
                   <li class="product-feature__item">
                     <p class="product-feature__descr descr">
                       8,5 м
-                      <span class="text-small">Длина палки</span>
                     </p>
+                    <span class="text-small">Длина палки</span>
                   </li>
                   <li class="product-feature__item">
                     <p class="product-feature__descr descr">
                       5 кг
-                      <span class="text-small">Вес палки</span>
                     </p>
+                    <span class="text-small">Вес палки</span>
                   </li>
                   <li class="product-feature__item">
                     <p class="product-feature__descr descr">
                       Карбон
-                      <span class="text-small">Материал</span>
                     </p>
+                    <span class="text-small">Материал</span>
                   </li>
                 </ul>
               </div>
@@ -215,64 +215,63 @@
           <h2 class="visually-hidden">Категории каталога.</h2>
           <ul class="categories__list list-reset">
             <li class="categories__item">
-              <a class="categories__link link" href="#">Виртуальная
+              <a class="categories__link virtual-icon link" href="#">Виртуальная
                 реальность</a>
             </li>
             <li class="categories__item">
-              <a class="categories__link link" href="#">Моноподы
+              <a class="categories__link monopods-icon link" href="#">Моноподы
                 для селфи</a>
             </li>
             <li class="categories__item">
-              <a class="categories__link link" href="#">Экшн-камеры</a>
+              <a class="categories__link action-cameras-icon link" href="#">Экшн-камеры</a>
             </li>
             <li class="categories__item">
-              <a class="categories__link link" href="#">Фитнес-браслеты</a>
+              <a class="categories__link fitness-bracelets-icon link" href="#">Фитнес-браслеты</a>
             </li>
             <li class="categories__item">
-              <a class="categories__link link" href="#">Умные часы</a>
+              <a class="categories__link smart-watch-icon link" href="#">Умные часы</a>
             </li>
             <li class="categories__item">
-              <a class="categories__link link" href="#">Квадрокоптеры</a>
+              <a class="categories__link quadcopters -icon link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
       </section>
-
       <!-- info -->
       <section class="info">
         <div class="page-container info-container">
           <h2 class="visually-hidden">Информация о доставке, гарантии и кредите.</h2>
-          <ul class="tabs__nav list-reset">
-            <li class="tabs__nav-item">
-              <button class="tabs__nav-btn tabs__nav-active btn" type="button">Доставка</button>
+          <ul class="tabs-nav list-reset">
+            <li class="tabs-nav__item">
+              <button class="tabs-nav__btn button-yellow tabs-nav__active btn" type="button">Доставка</button>
             </li>
-            <li class="tabs__nav-item">
-              <button class="tabs__nav-btn btn" type="button">Гарантия</button>
+            <li class="tabs-nav__item">
+              <button class="tabs-nav__btn button-yellow btn" type="button">Гарантия</button>
             </li>
-            <li class="tabs__nav-item">
-              <button class="tabs__nav-btn btn" type="button">Кредит</button>
+            <li class="tabs-nav__item">
+              <button class="tabs-nav__btn button-yellow btn" type="button">Кредит</button>
             </li>
           </ul>
-          <ul class="tabs__content list-reset">
-            <li class="tabs__panel tabs__panel-active">
-              <h3 class="tabs__panel-title title">Доставка</h3>
-              <p class="tabs__panel-descr descr">
+          <ul class="tabs-content list-reset">
+            <li class="tabs-panel  tabs-panel__active">
+              <h3 class="tabs-panel__title title">Доставка</h3>
+              <p class="tabs-panel__descr descr">
                 Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </li>
-            <li class="tabs__panel">
-              <h3 class="tabs__panel-title title">Гарантия</h3>
-              <p class="tabs__panel-descr descr">
+            <li class="tabs-panel">
+              <h3 class="tabs-panel__title title">Гарантия</h3>
+              <p class="tabs-panel__descr descr">
                 Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.
               </p>
             </li>
-            <li class="tabs__panel">
-              <h3 class="tabs__panel-title title">Кредит</h3>
-              <p class="tabs__panel-descr descr">
+            <li class="tabs-panel">
+              <h3 class="tabs-panel__title title">Кредит</h3>
+              <p class="tabs-panel__descr descr">
                 Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
                 кредита. Выгодные
                 для банка, разумеется.
@@ -305,7 +304,7 @@
               <li class="about-us__item">СДИК</li>
               <li class="about-us__item">ТоксБерри</li>
             </ul>
-            <a class="about-us__link btn" href="#">Подробнее о нас</a>
+            <a class="about-us__link button-yellow btn" href="#">Подробнее о нас</a>
           </div>
           <!-- contacts -->
           <div class="contacts">
@@ -321,7 +320,7 @@
               пн—пт: с 10:00 до 22:00<br>
               сб—вс: с 10:00 до 19:00
             </p>
-            <a class="contacts__link btn" href="#">Напишите нам</a>
+            <a class="contacts__link button-yellow btn" href="#">Напишите нам</a>
           </div>
         </div>
       </section>
