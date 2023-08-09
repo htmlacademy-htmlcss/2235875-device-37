@@ -1395,6 +1395,24 @@ img {
   background: transparent url("../images/icon/arrow-sort.svg") no-repeat right
     9px center;
   appearance: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.select-control:focus {
+  outline-offset: 2px;
+  outline: 2px solid #af4fff;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:disabled {
+  opacity: 0.1;
 }
 
 .arrow-buttons {
