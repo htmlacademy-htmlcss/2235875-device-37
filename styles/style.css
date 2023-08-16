@@ -2309,12 +2309,12 @@ img {
 }
 
 .modal-form__btn:focus {
-  outline-offset: 2px;
+  outline-offset: -2px;
   outline: 2px solid #af4fff;
 }
 
 .modal-form__btn:hover {
-  opacity: 0.6;
+  background-color: #ebebeb;
 }
 
 .modal-form__btn:active {

@@ -13,6 +13,12 @@ document.addEventListener('mouseup', (e) => {
   })
 })
 
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    popover.classList.remove('popover-open');
+  }
+});
+
 // modal
 const deliveryBtn = document.querySelector('.delivery-btn');
 const modalCloseButton = document.querySelector('.modal-content__close-btn');
@@ -28,9 +34,15 @@ modalCloseButton.addEventListener('click', () => {
   modalContainer.classList.add('modal-container-close');
 })
 
-modalContainer.addEventListener('mouseup', (e) => {
+modalContainer.addEventListener('click', (e) => {
   const click = e.composedPath().includes(modal);
   if (!click) {
     modalContainer.classList.add('modal-container-close');
   }
 })
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    modalContainer.classList.add('modal-container-close');
+  }
+});
