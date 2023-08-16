@@ -470,7 +470,7 @@
       <div class="modal modal-delivery">
         <section class="modal-content">
           <h2 class="modal-content__title title">Доставка под заказ</h2>
-          <button class="modal-content__close" type="button">
+          <button class="modal-content__close-btn" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -488,12 +488,12 @@
             </label>
             <label for="order" class="modal-form__label modal-form__label-order">
               <span class="modal-form__text text-size">Что нужно привезти:</span>
-              <input type="text" name="order" id="order" class="modal-form__input order-icon input"
+              <input type="text" name="order" id="order" class="modal-form__input order-input input"
                 placeholder="В свободной форме">
             </label>
             <div class="wrapper-label">
               <div class="tooltip-container">
-                <label for="quantity" class="modal-form__label">
+                <label for="quantity" class="modal-form__label modal-form__label-quantity">
                   <span class="modal-form__text text-size">Количество:</span>
                 </label>
                 <div class="tooltip">
@@ -507,8 +507,8 @@
                 <button class="modal-form__btn button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество человек</span>
                 </button>
-                <input type="number" name="quantity" id="quantity" class="modal-form__input input-quantity input"
-                  value="2">
+                <input type="number" name="quantity" id="quantity"
+                  class="modal-form__input input-quantity input input-namber" value="1">
                 <button class="modal-form__btn button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество человек</span>
                 </button>
