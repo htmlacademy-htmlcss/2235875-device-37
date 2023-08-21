@@ -8,7 +8,6 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
-    <script type="module" src="main.js" defer></script>
   </head>
 
   <body class="page">
@@ -370,18 +369,23 @@
       <!-- subscribe -->
       <section class="subscribe">
         <div class="page-container subscribe-container">
-          <h2 class="subscribe__title title">Подпишитесь<br>
-            на рассылку</h2>
-          <p class="subscribe__descr descr">Еженедельный дайджест с обзорами новинок,<br>
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-          <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
-            <label for="email">
-              <span class="visually-hidden">Введите email.</span>
-              <input class="subscribe-form__input input" type="email" name="email" id="email" placeholder="Ваш e-mail">
-            </label>
-            <button class="subscribe-form__button btn" type="submit">Подписаться</button>
-          </form>
-          <span class="subscribe__free">Это бесплатно</span>
+          <div class="subscribe-top">
+            <h2 class="subscribe__title title">Подпишитесь<br>
+              на рассылку</h2>
+            <p class="subscribe__descr descr">Еженедельный дайджест с обзорами новинок,<br>
+              длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
+          <div class="subscribe-bottom">
+            <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
+              <label for="email">
+                <span class="visually-hidden">Введите email.</span>
+                <input class="subscribe-form__input input" type="email" name="email" id="email"
+                  placeholder="Ваш e-mail">
+              </label>
+              <button class="subscribe-form__button btn" type="submit">Подписаться</button>
+            </form>
+            <span class="subscribe__free">Это бесплатно</span>
+          </div>
         </div>
       </section>
     </main>
@@ -470,32 +474,34 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-delivery">
         <section class="modal-content">
-          <h2 class="modal-content__title title">Доставка под заказ</h2>
-          <button class="modal-content__close-btn" type="button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
+          <div class="title-wrapper">
+            <h2 class="modal-content__title title">Доставка под заказ</h2>
+            <button class="modal-content__close-btn" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
           <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
             <label for="name" class="modal-form__label modal-form__label-name">
-              <span class="modal-form__text text-size">Ваше имя:</span>
+              <span class="modal-form__text">Ваше имя:</span>
               <input type="text" name="name" id="name" class="modal-form__input name-icon input"
                 placeholder="Введите имя">
               <span class="input-state input-valid">Добавьте имя</span>
             </label>
             <label for="mail" class="modal-form__label modal-form__label-mail">
-              <span class="modal-form__text text-size">Ваш e-mail:</span>
+              <span class="modal-form__text">Ваш e-mail:</span>
               <input type="text" name="email" id="mail" class="modal-form__input input-invalid input mail-icon"
                 placeholder="Введите почту" value="почта">
               <span class="input-state input-invalid-text">Забавный у вас адрес</span>
             </label>
             <label for="order" class="modal-form__label modal-form__label-order">
-              <span class="modal-form__text text-size">Что нужно привезти:</span>
+              <span class="modal-form__text">Что нужно привезти:</span>
               <input type="text" name="order" id="order" class="modal-form__input order-input input"
                 placeholder="В свободной форме">
             </label>
             <div class="wrapper-label">
-              <div class="tooltip-container">
+              <div class="tooltip-container form-label-icon">
                 <label for="quantity" class="modal-form__label modal-form__label-quantity">
-                  <span class="modal-form__text text-size">Количество:</span>
+                  <span class="modal-form__text">Количество:</span>
                 </label>
                 <div class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
@@ -520,6 +526,7 @@
         </section>
       </div>
     </div>
+    <script src="main.js" defer></script>
   </body>
 
 </html>
