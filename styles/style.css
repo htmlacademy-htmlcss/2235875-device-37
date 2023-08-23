@@ -435,6 +435,10 @@ img {
   margin-right: 35px;
 }
 
+.nav-bar .nav-bar__item--exit {
+  margin-right: 26px;
+}
+
 .nav-bar__item:first-child {
   margin-right: auto;
 }
@@ -486,10 +490,6 @@ img {
   line-height: normal;
   border-radius: 100%;
   background-color: #ffffff;
-}
-
-.nav-bar__item--exit {
-  margin-right: 26px;
 }
 
 .exit {
@@ -2263,6 +2263,7 @@ img {
 
 .tooltip {
   position: relative;
+  display: flex;
   margin-left: 2px;
   bottom: 3px;
 }
