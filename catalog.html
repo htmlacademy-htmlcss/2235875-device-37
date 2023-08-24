@@ -23,7 +23,7 @@
             <span class="visually-hidden">Поиск по сайту.</span>
             <input class="search__input input" type="text" name="search" id="search" placeholder="Поиск по сайту">
           </label>
-          <button class="search__button btn" type="button">Найти</button>
+          <button class="search__button" type="button">Найти</button>
         </form>
         <ul class="nav-bar list-reset">
           <li class="nav-bar__item">
@@ -165,15 +165,13 @@
                   </div>
                 </div>
                 <div class="range-wrapper-inputs">
-                  <label class="range__label">
-                    <span class="visually-hidden">от</span>
-                    <input class="range__input input input-namber" type="number" name="min-price" placeholder="от 0">
-                  </label>
-                  <label class="range__label">
-                    <span class="visually-hidden">до</span>
-                    <input class="range__input input input-namber" type="number" name="max-price" placeholder="до 5000"
-                      style="width: 60px">
-                  </label>
+                  <label class="range__label visually-hidden" for="min-price">от</label>
+                  <input class="range__input range__input-min input input-namber" id="min-price" type="number"
+                    name="min-price" placeholder="от 0">
+
+                  <label class="range__label visually-hidden" for="max-price">до</label>
+                  <input class="range__input input range__input-max input-namber" id="max-price" type="number"
+                    name="max-price" placeholder="до 5000">
                 </div>
               </div>
             </fieldset>
