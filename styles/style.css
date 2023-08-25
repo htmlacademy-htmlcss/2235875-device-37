@@ -90,7 +90,7 @@ img {
 
 .title {
   margin: 0;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -254,7 +254,7 @@ img {
 .search__button {
   width: 160px;
   padding: 7px 16px;
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -514,7 +514,7 @@ img {
   position: relative;
   display: block;
   padding-top: 14px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -674,7 +674,7 @@ img {
 }
 
 .catalog-menu__link {
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -722,7 +722,7 @@ img {
   display: block;
   width: 250px;
   height: 135px;
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 180px;
   font-style: normal;
   font-weight: 700;
@@ -893,7 +893,7 @@ img {
 }
 
 .categories__link {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -1160,7 +1160,7 @@ img {
 .detail__subtitle {
   margin: 0;
   margin-bottom: 15px;
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -1372,7 +1372,7 @@ img {
 }
 
 .footer-menu__link {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -1578,7 +1578,7 @@ img {
 
 .filter-title {
   margin-bottom: 58px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -1684,7 +1684,7 @@ img {
 .range__input {
   padding: 2px;
   max-width: 105px;
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1807,7 +1807,7 @@ img {
 }
 
 .sorting__title {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -1939,7 +1939,7 @@ img {
   left: 50%;
   width: 220px;
   z-index: 2;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -2157,7 +2157,7 @@ img {
 
 .modal-content__title {
   margin-right: auto;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -2263,7 +2263,7 @@ img {
 }
 
 .modal-form__input::placeholder {
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
