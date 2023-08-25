@@ -129,12 +129,12 @@ img {
 }
 
 /* прячет стрелочки у type="number" */
-.input-namber::-webkit-outer-spin-button,
-.input-namber::-webkit-inner-spin-button {
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.input-namber[type="number"] {
+.input-number[type="number"] {
   -moz-appearance: textfield;
 }
 
